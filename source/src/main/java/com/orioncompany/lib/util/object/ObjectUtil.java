@@ -2,10 +2,10 @@ package com.orioncompany.lib.util.object;
 
 import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.mapper.MapperWrapper;
+import org.apache.commons.codec.binary.Base64;
 import org.jetbrains.annotations.NotNull;
 
 import java.io.*;
-import java.util.Base64;
 
 /**
  * Created by orion on 16.04.15.
@@ -27,13 +27,13 @@ public final class ObjectUtil {
         objectOutputStream.flush();
         objectOutputStream.close();
         final byte[] byteArray = byteArrayOutputStream.toByteArray();
-        final byte[] byteArrayBase64 = Base64.getEncoder().encode(byteArray);
+        final byte[] byteArrayBase64 = Base64.encodeBase64(byteArray);
         return new String(byteArrayBase64);
     }
 
     @NotNull
     public static Object objectFromString(@NotNull final String value) throws IOException, ClassNotFoundException {
-        final byte[] objectBytes = Base64.getDecoder().decode(value.getBytes());
+        final byte[] objectBytes = Base64.decodeBase64(FMvalue.getBytes());
         final ObjectInputStream objectInputStream = new ObjectInputStream(new ByteArrayInputStream(objectBytes));
         return objectInputStream.readObject();
     }
