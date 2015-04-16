@@ -32,9 +32,7 @@ public final class ObjectUtil {
     }
 
     @NotNull
-    public static Object objectFromString(
-            @NotNull final String value
-    ) throws IOException, ClassNotFoundException {
+    public static Object objectFromString(@NotNull final String value) throws IOException, ClassNotFoundException {
         final byte[] objectBytes = Base64.getDecoder().decode(value.getBytes());
         final ObjectInputStream objectInputStream = new ObjectInputStream(new ByteArrayInputStream(objectBytes));
         return objectInputStream.readObject();
