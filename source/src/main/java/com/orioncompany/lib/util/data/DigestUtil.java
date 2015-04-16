@@ -10,7 +10,7 @@ import java.security.NoSuchAlgorithmException;
 /**
  * Created by orion on 16.04.15.
  */
-public class DigestUtil {
+public final class DigestUtil {
 
     public static String getHash(
             @Nullable final String algorithm,
