@@ -1,6 +1,6 @@
-package com.orioncompany.lib.util.object;
+package ru.volnenko.lib.util.object;
 
-import com.orioncompany.lib.util.dto.Foo;
+import ru.volnenko.lib.util.dto.Foo;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

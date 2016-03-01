@@ -1,4 +1,4 @@
-package com.orioncompany.lib.util.net.http;
+package ru.volnenko.lib.util.net.http;
 
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;

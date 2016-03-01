@@ -1,4 +1,4 @@
-package com.orioncompany.lib.util.object;
+package ru.volnenko.lib.util.object;
 
 import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.mapper.MapperWrapper;

@@ -1,4 +1,4 @@
-package com.orioncompany.lib.util.data;
+package ru.volnenko.lib.util.data;
 
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;

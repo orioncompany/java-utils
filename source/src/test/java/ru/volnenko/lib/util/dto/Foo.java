@@ -1,4 +1,4 @@
-package com.orioncompany.lib.util.dto;
+package ru.volnenko.lib.util.dto;
 
 import org.jetbrains.annotations.Nullable;
 
