@@ -53,7 +53,7 @@
     <distributionManagement>
         <repository>
             <id>volnenko</id>
-            <url>http://m2.volnenko.ru/</url>
+            <url>http://m2.volnenko.ru/artifactory/libs-release-local/</url>
         </repository>
     </distributionManagement>
 
