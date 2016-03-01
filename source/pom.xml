@@ -50,6 +50,13 @@
 
     </dependencies>
 
+    <distributionManagement>
+        <repository>
+            <id>volnenko</id>
+            <url>http://m2.volnenko.ru/</url>
+        </repository>
+    </distributionManagement>
+
     <build>
         <plugins>
 
