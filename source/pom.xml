@@ -9,6 +9,29 @@
     <name>Volnenko Utils</name>
     <version>1.0.0</version>
 
+    <profiles>
+        <profile>
+            <id>sonar</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <executions>
+                            <execution>
+                                <phase>prepare-package</phase>
+                                <goals>
+                                    <goal>sonar</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                        <groupId>org.codehaus.sonar</groupId>
+                        <artifactId>sonar-maven-plugin</artifactId>
+                        <version>4.3.2</version>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
     <dependencies>
 
         <dependency>
